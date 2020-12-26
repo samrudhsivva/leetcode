@@ -1,0 +1,15 @@
+l1=[int(i) for i in input().split()]
+l2=[int(i) for i in input().split()]
+str1=''
+str2=''
+for i in range(len(l1)-1,-1,-1):
+    str1+=str(l1[i])
+for i in range(len(l2)-1,-1,-1):
+    str2+=str(l2[i])    
+sum=0
+sum=int(str1)+int(str2)
+sum=str(sum)
+l3=[]
+for i in range(len(sum)-1,-1,-1):
+    l3.append(int(sum[i]))
+print(l3)
