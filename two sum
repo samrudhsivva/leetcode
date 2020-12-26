@@ -1,0 +1,7 @@
+#finding target_value from given array of integers
+l=[int(i) for i in input().split()]
+tar=int(input())
+for i in range(0,len(l)):
+    for j in range(i,len(l)):
+        if l[i]+l[j]==tar:
+            print("["+str(i)+","+str(j)+"]")
